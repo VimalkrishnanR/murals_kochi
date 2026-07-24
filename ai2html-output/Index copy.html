@@ -1,0 +1,381 @@
+<!-- The originial version of this template was made by Johnathan Soma and then messed with and customized by Aaron Reiss -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <script type="text/javascript">
+			// EDIT HERE IF NECESSARY
+			window.ai2html_embedder = {
+				html_file: 'ekm.html'
+			}
+		</script>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      :root {
+            --bg-color: #F8EFDB;
+            --text-color: #1a1a1a;
+            --accent-color: #E0AB3A;
+            --accent-muted: #e8dcd0;
+            --border-color: #86926D;
+            --font-serif: 'freight-book', serif;
+            --font-sans: 'Helvetica Neue', Arial, sans-serif;
+            --font-title: "freight-big-pro", Georgia, serif
+        }
+        /* * { box-sizing: border-box; margin: 0; padding: 0; } */
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: var(--font-serif);
+            line-height: 1.6;
+            padding: 2rem 1rem;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 4rem;
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 2rem;
+        }
+
+        h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            color: var(--accent-color);
+            margin-bottom: 1rem;
+            line-height: 1.1;
+        }
+
+        .subtitle {
+            font-family: var(--font-sans);
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: #666;
+        }
+
+        p {
+            font-size: 1.15rem;
+            margin-bottom: 1.5rem;
+        }
+        @media (max-width: 768px) {
+            .interactive-showcase { grid-template-columns: 1fr; }
+        }
+
+        .visual-canvas {
+            position: relative;
+            background: var(--bg-color);
+            aspect-ratio: 1;
+            border: 1px dashed var(--border-color);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        figure {
+      margin: 0;
+      padding-bottom: 1.2em;
+    }
+
+    figcaption {
+      font-size: 0.8em;
+      text-align: center;
+      margin-top: 0.5em;
+      color: #666;
+    }
+      /* .modal {
+        display: none;
+        position: fixed;
+        inset: 0;
+        background: palevioletred;
+        justify-content: center;
+        align-items: center;
+        z-index: 9999;
+      }
+
+      .modal-content {
+        background: white;
+        padding: 2rem;
+        max-width: 400px;
+        border-radius: 8px;
+        text-align: center;
+        font-family: sans-serif;
+        font-size: 14px;
+      }
+
+      .modal button {
+        margin-top: 1rem; */
+        /* padding: 0.5rem 1rem;
+        cursor: pointer;
+      }
+      
+      h1{
+        max-width: 50%;
+        margin: 4rem auto 2rem auto;
+        }
+      
+      p{
+        max-width: 50%;
+        font-family: sans-serif;
+        margin: 0 auto 2rem auto;
+        font-size: 19px;
+      } */
+      
+      #scrolly {
+        position: relative;
+        padding: 1rem;
+      }
+
+      .scrolly-overlay {
+        position: relative;
+        padding: 0;
+        max-width: 35rem;
+        margin-left: 2px;
+        margin-right: auto;
+      }
+
+      .sticky-thing {
+        position: -webkit-sticky;
+        position: sticky;
+        left: 0;
+        width: 100%;
+        margin: 0;
+        z-index: 0;
+        top: 0;
+        height: 100vh;
+        /* Center everything inside */
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      .step {
+        margin: 0 auto 2rem auto;
+        margin-bottom: 25rem;
+        background-color: #eee;
+        background-color: #fff;
+        color: black;
+        text-align: center;
+        border: 3px solid red;
+      }
+
+      .step p {
+        padding: 1rem;
+        font-size: 1.25rem;
+        border: black;
+      }
+
+      #zoomBox {
+          overflow: clip;    
+          margin-left: 44vw !important;
+          max-width: 53vw !important;
+          max-height: none !important;
+      }
+      
+      .photoDiv {
+        width: 100%;
+        margin-right: 0px;
+        margin-left: auto;
+        display: block;
+        transition:
+          margin 1.5s 0s,
+          transform 2.5s 0s;
+      }
+
+      /* When it's less than 700 pixels wide, do normal scrollytelling */
+      @media only screen and (min-width: 700px) {
+        #scrolly.side-by-side {
+          display: flex;
+        }
+
+        #scrolly.side-by-side > div {
+          flex-basis: 0;
+          flex-grow: 1;
+          flex-shrink: 1;
+          padding: 0.75em;
+        }
+
+        #scrolly.side-by-side .scrolly-overlay {
+          margin-top: 70vh;
+          order: 0;
+          /* Change these to adjust sizing options */
+          min-width: 15rem;
+          max-width: 20rem;
+        }
+
+        #scrolly.side-by-side .sticky-thing {
+          order: 1;
+          flex-grow: 2;
+        }
+      }
+    </style>
+		<script src="https://unpkg.com/intersection-observer@0.5.1/intersection-observer.js"></script>
+	  <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollama/3.0.4/scrollama.min.js"></script>
+	  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.3.0/d3.min.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+        <header>
+            <p class="subtitle">The Murals of Kochi</p>
+            <h1>A Visual Exploration</h1>
+            <p>An interactive exploration into the murals of Kochi and the ASI</p>
+        </header>
+	<!-- <h1>Template for Scrollytelling With Exported Images</h1>
+
+  <p>This is a template for a scrollytelling experience that basically puts an image element on the webpage in the html (you can see it in the code below here, it's called scrollyPhoto) and then uses different scrolly steps (step1, step2, etc) to change the image that shows up in the image element. You change the image that shows up by changing the "src" that the image element looks for.</p>
+
+  <p>This template will help cheat a kind of scrolly telling map that "changes" as you scroll.</p> -->
+  </div>
+  
+  <figure style="width: 70%; margin: 0 auto; padding-bottom: 1.2em;">
+    <img
+     src="Mattancherry_Palace-16-17th_Century_mural_paintings-Scenes_from_the_Ramayana-WUS09250.jpg"
+     style="width: 100%; height: auto; display: block;">
+    <figcaption></figcaption>
+  </figure>
+            
+    					<div id="ai2html-graphic"></div>
+
+<!-- Sticky Thing 1 goes below this line -->
+            
+<!-- Sticky Thing 1 goes above this line -->
+
+
+        <div class="scrolly-overlay">
+          <div class="step" id="step1">
+            <p>STEP ONE<br><br>This is span</p>
+          </div>
+          <div class="step" id="step2">
+            <p>STEP TWO<br><br>Changes the image again, this is all by changing the "src" address that "#scrollyPhoto1" is looking for.</p>
+          </div>
+          <div class="step" id="step3">
+            <p>STEP THREE<br><br>You can add as many steps as you want. You could even add an image inside a scrolly step — just look at this beautiful illustration by Kento Iida, below:</p>
+            <img src="ticketAsi.jpeg" style="max-width: 300px; margin: 0 auto">
+          </div>
+        </div>
+      </section>
+
+      <p>Then maybe I have a block of text talking about something or another and then I want to direct you to another map, or a different zoom level, or an image that I want to annotate — whatever. I can create another photoDiv below. In fact, I can add as many as I want.</p>
+
+      <p>This concept works best if you have a simple base map with a story that progresses with prose on the left and changing annotations on that base map on the right. and it requires that when you export images from Adobe Illustrator you ALWAYS USE THE ARTBOARD when saving and keep all save settings the same (size, image type, etc).</p>
+
+    <!-- Mobile Warning Modal -->
+    <div id="deviceModal" class="modal">
+      <div class="modal-content">
+        <span>
+          Wow! One of your friends must be in Aaron Reiss's "Telling Stories With Maps" class — how cool! <br><br> Sadly, this site is meant to be viewed on a computer, so if you are on a phone or tablet then it's gonna look all kinds of wonky and you might get the wrong impression about how amazing this work is.
+        </span>
+        <button id="continueBtn">Continue Anyway</button>
+      </div>
+    </div>
+
+<script>
+
+/* Scrollytelling code goes under here */
+
+  // Code for the Photo Div #1 (aka #scrollyPhoto1)
+    
+    // Entering Step One
+  d3.select("#step1").on('stepin',function(e) {
+    console.log("We've arrived at STEP ONE in the photo div")
+    d3.select("#scrollyPhoto").attr("src", "Mattancherry_Palace-16-17th_Century_mural_paintings-Scenes_from_the_Ramayana-WUS09243.jpg");
+     d3.select("#scrollyPhoto").style("transform", "scale(2.9) translate(0%, -10%)");
+  })
+
+    // Entering Step Two
+    d3.select("#step2").on('stepin',function(e) {
+    console.log("We've arrived at STEP TWO in the photo div")
+    d3.select("#scrollyPhoto").attr("src", "Mattancherry_Palace-16-17th_Century_mural_paintings-Scenes_from_the_Ramayana-WUS09243.jpg");
+
+  })
+
+    // Entering Step Three
+    d3.select("#step3").on('stepin',function(e) {
+    console.log("We've arrived at STEP Three in the photo div")
+    d3.select("#scrollyPhoto").attr("src", "Mattancherry_Palace-16-17th_Century_mural_paintings-Scenes_from_the_Ramayana-WUS09243.jpg");
+  })
+
+</script>
+
+<!-- LEAVE ALONE, scrolly code goes in the section below -->
+<script>
+    const scroller = scrollama();
+
+	scroller
+		.setup({
+			step: "#scrolly .scrolly-overlay .step",
+			offset: 0.5,
+			debug: false
+		})
+		.onStepEnter(function({ element, index, direction}) {
+			const event = new CustomEvent('stepin', { detail: { direction: direction } })
+			element.dispatchEvent(event);
+		})
+		.onStepExit(function({ element, index, direction }) {
+			const event = new CustomEvent('stepout', { detail: { direction: direction } })
+			element.dispatchEvent(event);
+		});
+
+	window.addEventListener("resize", scroller.resize);
+    </script>
+
+
+<!-- mobile phone warning modal -->
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const isSmallScreen = window.innerWidth <= 900;
+
+    if (isSmallScreen) {
+      document.getElementById("deviceModal").style.display = "flex";
+    }
+
+    document
+      .getElementById("continueBtn")
+      .addEventListener("click", function () {
+        document.getElementById("deviceModal").style.display = "none";
+      });
+  });
+</script>
+<script type="text/javascript">
+			// we're just grabbing the contents of one file for demonstration ease
+			// if you want multiple graphics from multiple ai2html projects on this page, you'll have to paste them into the code directly
+			document.addEventListener('DOMContentLoaded', insert_graphic);
+
+			async function insert_graphic() {
+				let ai2html_output = await load_html();
+				if (! ai2html_output) { return; }
+
+				document.getElementById('ai2html-graphic').innerHTML = ai2html_output;
+			}
+
+			// this function fetches the filename specified at the top of this file and returns its contents for insertion into this page
+			async function load_html() {
+				// we need a filename to go get, so bail immediately if that's missing for some reason
+				if (! window.hasOwnProperty('ai2html_embedder') || ! window.ai2html_embedder.hasOwnProperty('html_file')) { return; }
+				const html_file = window.ai2html_embedder.html_file;
+
+				// safety first
+				if (! html_file) { return; }
+
+				try {
+					// grab the file
+					const response = await fetch('./' + html_file);
+					if (!response.ok) { throw new Error('Response status: ' + response.status); }
+
+					// return its contents
+					return await response.text();
+				} catch (error) {
+					// uh-oh
+					console.error(error.message);
+				}
+			}
+		</script>
+  </body>
+</html>

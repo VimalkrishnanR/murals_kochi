@@ -80,9 +80,9 @@ var config = {
             id: 'third-identifier',
             alignment: 'left',
             hidden: false,
-            title: 'Geneva',
+            title: 'Murals',
             image: './assets/geneva.jpg',
-            description: 'Across four hubs in Ernakulam district, s.',
+            description: 'Many of these temples have murals that were painted in the 15th to the 19th century.',
             location: {
                 center: [76.259349, 9.9582986],
                 zoom: 12,

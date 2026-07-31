@@ -81,7 +81,7 @@ var config = {
             alignment: 'left',
             hidden: false,
             title: 'Murals',
-            image: './assets/geneva.jpg',
+            image: './assets/2.jpg',
             description: 'Many of these temples have murals that were painted in the 15th to the 19th century.',
             location: {
                 center: [76.259349, 9.9582986],

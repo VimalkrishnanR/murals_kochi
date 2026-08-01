@@ -15,9 +15,9 @@ var config = {
     theme: 'dark',
     use3dTerrain: false, //set true for enabling 3D maps.
     auto: false,
-    title: 'The Temple Murals of Kochi',
-    subtitle: 'There are ancient murals in the temples of Kochi. Some are protected as heritage, while others are not.',
-    byline: 'By  Vimal Krishnan R',
+    // title: 'The Temple Murals of Kochi',
+    // subtitle: 'There are ancient murals in the temples of Kochi. Some are protected as heritage, while others are not.',
+    // byline: 'By  Vimal Krishnan R',
     footer: 'Source: source citations, etc. <br> Created using <a href="https://github.com/mapbox/storytelling" target="_blank">Mapbox Storytelling</a> template. <br><br>Rainer Halama, Mattancherry Palace-16-17th Century mural paintings-Scenes from the Ramayana-WUS09250, resized the image, added Interactivity, etc. by Vimal Krishnan R, CC BY-SA 4.0',
     chapters: [
         

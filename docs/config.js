@@ -1,12 +1,15 @@
 var config = {
         style: 'mapbox://styles/vimalkrishnan/cms7icmfp005t01sdc4a85u13',
     // leave commented to use Mapbox Standard Style
-    accessToken: 'pk.eyJ1IjoidmltYWxrcmlzaG5hbiIsImEiOiJjbXM5Mno1ajgwOHA2MnpzY2Jobmk1cDRtIn0.3C5BWAJakNTmKtmiCB8TEQ',
+    accessToken: 'pk.eyJ1IjoidmltYWxrcmlzaG5hbiIsImEiOiJjbXM5Mzg0cTUwNXJzMzBwZXF2dWhmMmxqIn0.oqpATpbnI_59oRVLhFB2zg',
     //  showMarkers: true,
      markerColor: '#EBB263',
     //  projection: 'equirectangular',
     //Read more about available projections here
     //https://docs.mapbox.com/mapbox-gl-js/example/projections/
+    title: 'The Murals of Kochi',
+    subtitle: 'While some murals in Kochi are protected as heritage sites, others are not.',
+    byline: 'Vimal Krishnan R',
     inset: true,
     insetOptions: {
         markerColor: 'orange'
@@ -27,10 +30,10 @@ var config = {
             hidden: false,
             title: "Kerala, God's Own Country",
             // image: './assets/washington-dc.jpg',
-            description: "Kerala is known as God's Own Country. Although this tagline is used in a tourism context, the many temples that dot Kerala's landscape make it quite literal.  ",
+            description: "Kerala is known as God's Own Country. Although this is Kerala’s tagline to promote tourism, the many temples that dot its landscape make it quite literal.",
             location: {
                 center: [76.259349, 9.9582986],
-                zoom: 7.5,
+                zoom: 7,
                 pitch: 60,
                 bearing: -43.2,
                 // flyTo additional controls-
@@ -52,7 +55,7 @@ var config = {
             hidden: false,
             title: 'Temple Density in Ernakulam',
             // image: './assets/san-fran.jpeg',
-            description: 'Like other districts, Ernakulam, in central Kerala, has a high density of temples. Ernakulam is home to Kochi, a historic port city.<br><br>A basic survey of temples within a 10 km radius in four hubs of Ernakulam district would reveal just over 200 temples.',
+            description: 'Like other districts, Ernakulam, in central Kerala, has a high density of temples. Within a 10 km radius of just four locations: Aluva, Kochi, Paravur, and Muvattupuzha, spread across Ernakulam, we can find just over 200 temples. This sample indicates the sheer variety of temples in Ernakulam and across Kerala.  <br> <br> Source: Google Places API',
             location: {
                 center: [76.259349, 9.9582986],
                 zoom: 10,
@@ -80,9 +83,9 @@ var config = {
             id: 'third-identifier',
             alignment: 'left',
             hidden: false,
-            title: 'Murals',
-            image: './assets/2.jpg',
-            description: 'Many of these temples have murals that were painted in the 15th to the 19th century.',
+            title: 'Murals in and around Kochi',
+            // image: './assets/2.jpg',
+            description: 'Ernakulam is home to Kochi, a historic port city. This story explores mural paintings found in a few temples and heritage monuments in and around Kochi. The mural paintings of Kerala mostly date from the fifteenth to the nineteenth centuries. They depict Hindu gods and themes from Hindu mythology and <i>itihasas </i>.',
             location: {
                 center: [76.259349, 9.9582986],
                 zoom: 12,

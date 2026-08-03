@@ -4,7 +4,7 @@
 <head>
     <meta charset='utf-8' />
     <title>Mural_kochi</title>
-    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <link rel="icon" type="image/x-icon"
         href="https://raw.githubusercontent.com/mapbox/assembly/publisher-staging/src/svgs/mapbox.svg">
     <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.js'></script>
@@ -795,7 +795,7 @@
             story.appendChild(footer);
         }
 
-        mapboxgl.accessToken = 'pk.eyJ1IjoidmltYWxrcmlzaG5hbiIsImEiOiJjbXM5Mzg0cTUwNXJzMzBwZXF2dWhmMmxqIn0.oqpATpbnI_59oRVLhFB2zg'
+        mapboxgl.accessToken = 'pk.eyJ1IjoidmltYWxrcmlzaG5hbiIsImEiOiJjbXM5Mno1ajgwOHA2MnpzY2Jobmk1cDRtIn0.3C5BWAJakNTmKtmiCB8TEQ'
 
         var map = new mapboxgl.Map({
             container: 'map',
@@ -807,7 +807,14 @@
             interactive: false,
             projection: config.projection
         });
+          map.on('load', function() {
+            map.resize();
+        });
 
+        // Recalculate layout whenever window resizes
+        window.addEventListener('resize', function() {
+            map.resize();
+        });
         if (config.inset) {
             map.addControl(
                 new GlobeMinimap({ ...config.insetOptions }),

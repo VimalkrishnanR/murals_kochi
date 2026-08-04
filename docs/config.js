@@ -42,7 +42,7 @@ var config = {
                 //speed: 2, // make the flying slow
                 //curve: 1, // change the speed at which it zooms out
             },
-            mapAnimation: 'easeTo',
+            mapAnimation: 'jumpTo',
             rotateAnimation: true,
             callback: '',
             onChapterEnter: [],
@@ -61,7 +61,7 @@ var config = {
                 pitch: 60,
                 bearing: 0
             },
-            mapAnimation: 'easeTo',
+            mapAnimation: 'jumpTo',
             rotateAnimation: false,
             callback: '',
             onChapterEnter: [

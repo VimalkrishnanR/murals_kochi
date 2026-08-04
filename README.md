@@ -32,7 +32,7 @@ I hope to return to this project to do deeper analysis.
 2. <i>Keralathile Chuvarchitrangal</i> Dr. M. G. Sasibhooshan, The State Institute of Languages, Kerla (2019)
 3. [A Little Jewel Box, R.Nandakumar, <i>Anamika</i>, Blogger](https://nandakumarr.blogspot.com/2022/05/a-little-jewel-box.html) 
 4. [The Mural Traditions in Indian Churches: Contextualising Church Murals of Kerala, Jenee Peter, Sahapedia](https://www.sahapedia.org/contextualizing-church-murals-of-kerala-within-the-mural-traditions-indian-churches) 
-5. [Mapbox Storytelling template](https://github.com/mapbox/storytelling" target="_blank)
+5. [Mapbox Storytelling template](https://github.com/mapbox/storytelling")
  
 ## Acknowledgements: 
 I thank all my instructors in the Lede program, especially Aaron Reiss, Youyou Zhou, and Veronica Penney, for their inputs on mapping, QGIS, D3 and Javascript which I have applied in this project. I also acknowledge Ana Muñoz Padrós and Ilena Peng for their mentorship sessions. I thank Jon Viktor Cabuenas for guidance on using Google Places and my friends Gokul and Nandakumar.

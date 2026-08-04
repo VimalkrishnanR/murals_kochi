@@ -27,21 +27,14 @@
             --font-title: "freight-big-pro", Georgia, serif;
         }
 
-       *, *:before, *:after {
-       box-sizing: border-box;
-       }
-
-       html, body {
-           width: 100%;
-           max-width: 100%;
-           margin: 0;
-           padding: 0;
-           font-family: var(--font-sans);
-           color: var(--text-color);
-           overflow-x: hidden;
-           background-color: var(--bg-color);
-           -webkit-text-size-adjust: 100%;
-       }
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: var(--font-sans);
+            color: var(--text-color);
+            overflow-x: hidden;
+            background-color: var(--bg-color);
+        }
 
         a,
         a:hover,
@@ -51,7 +44,6 @@
 
         #map {
             top: 0;
-            left: 0;
             height: 100vh;
             height: 100dvh;
             width: 100vw;
@@ -220,9 +212,6 @@
         #story {
             position: relative;
             z-index: 2;
-            width: 100%;
-            max-width: 100%;
-            overflow-x: hidden;
         }
 
         /* Base Scrolley Container - Matches main intro background */
@@ -298,13 +287,13 @@
         #body-scrolly #zoomBox.full-width-mode {
             width: 100vw !important;
             height: 100vh !important;
-            height: 100dvh !important; 
+            height: 100dvh;
             position: absolute;
             left: 0;
             top: 0;
             padding: 0;
             margin: 0;
-            /* box-sizing: border-box; */
+            box-sizing: border-box;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -383,7 +372,7 @@
 
         /* Chapter Title Image (Clinging directly to Chapter Banner) */
         .chapter-image-container {
-            width: 100%;
+            width: 100vw;
             margin-top: 0;
             margin-bottom: 0;
             padding: 0;
@@ -841,9 +830,9 @@
             interactive: false,
             projection: config.projection
         });
-        //   map.on('load', function() {
-        //     map.resize();
-        // });
+          map.on('load', function() {
+            map.resize();
+        });
 
         // Recalculate layout whenever window resizes
         window.addEventListener('resize', function() {
@@ -865,7 +854,7 @@
         var scroller = scrollama();
 
         map.on("load", function () {
-             map.resize();
+             map.resize()
             if (config.use3dTerrain) {
                 map.addSource('mapbox-dem', {
                     'type': 'raster-dem',

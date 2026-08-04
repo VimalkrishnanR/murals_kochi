@@ -4,7 +4,7 @@ var config = {
     accessToken: 'pk.eyJ1IjoidmltYWxrcmlzaG5hbiIsImEiOiJjbXM5Mno1ajgwOHA2MnpzY2Jobmk1cDRtIn0.3C5BWAJakNTmKtmiCB8TEQ',
     //  showMarkers: true,
     //  markerColor: '#EBB263',
-    //  projection: 'equirectangular',
+        // projection: 'equirectangular',
     //Read more about available projections here
     //https://docs.mapbox.com/mapbox-gl-js/example/projections/
     title: 'The Murals of Kochi',

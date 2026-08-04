@@ -15,8 +15,8 @@ var config = {
         markerColor: 'orange'
     },
     insetPosition: 'bottom-right',
-    theme: 'dark',
-    use3dTerrain: false, //set true for enabling 3D maps.
+    // theme: 'dark',
+    use3dTerrain: true, //set true for enabling 3D maps.
     auto: false,
     
     footer: 'A project developed during The Lede Program <br> Columbia University, Graduate School of Journalism<br><br> Methodology: Temple density in Ernakulam was calculated by quering the Google Places API in Python. The distances between ASI protected monuments, the unlisted murals, and the state protected temple murals were calculated by running the Distance to nearest hub (line to hub) vector analysis (projection: EPSG:32643 (WGS 84 / UTM Zone 43N). The mural photographs (except the <i>Ramayana</i> hall mural) were taken by the author. For more details, see this GitHub repository:<a href="https://github.com/VimalkrishnanR/murals_kochi"> murals_kochi</a> <br><br> Acknowledegements: I thank all my instructors in the Lede program, especially Aaron Reiss, Youyou Zhou, and Veronica Penney, for their inputs on mapping, QGIS, D3 and Javascript which I have applied in this project. I also acknowledge Ana Muñoz Padrós and Ilena Peng for their mentorship sessions. I thank Jon Viktor Cabuenas for guidance on using Google Places and my friends Gokul and Nandakumar.<br><br> References:asdsdd<br><br>Created using <a href="https://github.com/mapbox/storytelling" target="_blank">Mapbox Storytelling</a> template. <br><br> <a href="https://commons.wikimedia.org/wiki/File:Mattancherry_Palace-16-17th_Century_mural_paintings-Scenes_from_the_Ramayana-WUS09250.jpg">Rainer Halama, Mattancherry Palace-16-17th Century mural paintings-Scenes from the Ramayana-WUS09250</a>, resized the image, added Interactivity, etc. by Vimal Krishnan R, <a href="https://creativecommons.org/licenses/by-sa/4.0/legalcode">CC BY-SA 4.0</a></span>', 
@@ -42,7 +42,7 @@ var config = {
                 //speed: 2, // make the flying slow
                 //curve: 1, // change the speed at which it zooms out
             },
-            mapAnimation: 'jumpTo',
+            mapAnimation: 'flyTo',
             rotateAnimation: true,
             callback: '',
             onChapterEnter: [],
@@ -61,7 +61,7 @@ var config = {
                 pitch: 60,
                 bearing: 0
             },
-            mapAnimation: 'jumpTo',
+            mapAnimation: 'flyTo',
             rotateAnimation: false,
             callback: '',
             onChapterEnter: [

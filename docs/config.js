@@ -19,8 +19,8 @@ var config = {
     use3dTerrain: false, //set true for enabling 3D maps.
     auto: false,
     
-    footer: A project developed during The Lede Program
-    Columbia University, Graduate School of Journalism<br>'References: MGS <br> Created using <a href="https://github.com/mapbox/storytelling" target="_blank">Mapbox Storytelling</a> template. <br><br> <a href="https://commons.wikimedia.org/wiki/File:Mattancherry_Palace-16-17th_Century_mural_paintings-Scenes_from_the_Ramayana-WUS09250.jpg">Rainer Halama, Mattancherry Palace-16-17th Century mural paintings-Scenes from the Ramayana-WUS09250</a>, resized the image, added Interactivity, etc. by Vimal Krishnan R, <a href="https://creativecommons.org/licenses/by-sa/4.0/legalcode">CC BY-SA 4.0</a></span>', 
+    footer: 'A project developed during The Lede Program'
+    'Columbia University, Graduate School of Journalism<br>References: MGS <br> Created using <a href="https://github.com/mapbox/storytelling" target="_blank">Mapbox Storytelling</a> template. <br><br> <a href="https://commons.wikimedia.org/wiki/File:Mattancherry_Palace-16-17th_Century_mural_paintings-Scenes_from_the_Ramayana-WUS09250.jpg">Rainer Halama, Mattancherry Palace-16-17th Century mural paintings-Scenes from the Ramayana-WUS09250</a>, resized the image, added Interactivity, etc. by Vimal Krishnan R, <a href="https://creativecommons.org/licenses/by-sa/4.0/legalcode">CC BY-SA 4.0</a></span>', 
 
     chapters: [
         

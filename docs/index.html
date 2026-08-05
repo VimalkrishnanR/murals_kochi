@@ -4,7 +4,7 @@
 <head>
     <meta charset='utf-8' />
     <title>Mural_kochi</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.5"/>
     <link rel="icon" type="image/x-icon"
         href="https://raw.githubusercontent.com/mapbox/assembly/publisher-staging/src/svgs/mapbox.svg">
     <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.js'></script>
@@ -972,17 +972,17 @@
                     d3.select("#scrollyPhoto").style("transform-origin", "center center");
                 } 
                 else if (stepId === "body-step2") {
-                    /* Step 2: STATIC, fully unzoomed wide overview */
+                    /* Step 2: full view of mattancherry mural */
                     d3.select("#zoomBox").classed("full-width-mode", false);
                     d3.select("#scrollyPhoto").attr("src", "./assets/mural_details.jpg");
                     d3.select("#scrollyPhoto").style("transform-origin", "center center");
                     d3.select("#scrollyPhoto").style("transform", "scale(1) translate(0%, 0%)");
                 } 
                 else if (stepId === "body-step2b") {
-                    /* Step 2B: Zoom reduced by 5% (to 2.09x) focusing on mid-right detail */
+                    /* Step 2B: Zoomed view of mattancherry mural */
                     d3.select("#zoomBox").classed("full-width-mode", true);
                     d3.select("#scrollyPhoto").attr("src", "./assets/mural_details.jpg");
-                    d3.select("#scrollyPhoto").style("transform-origin", "91% 50%");
+                    d3.select("#scrollyPhoto").style("transform-origin", "80% 50%");
                     d3.select("#scrollyPhoto").style("transform", "scale(2.09)");
                 } 
                 else if (stepId === "body-step3") {
@@ -992,7 +992,7 @@
                     d3.select("#scrollyPhoto").style("transform", "scale(1) translate(0%, 0%)");
                 } 
                  else if (stepId === "body-step3b") {
-                    /* Step 2B: Zoom reduced by 5% (to 2.09x) focusing on mid-right detail */
+                    /* Step 2B: ganesha at siva narayana temple mural */
                     d3.select("#zoomBox").classed("full-width-mode", false);
                     d3.select("#scrollyPhoto").attr("src", "./assets/ganesha.jpg");
                     d3.select("#scrollyPhoto").style("transform-origin", "30% 30%");

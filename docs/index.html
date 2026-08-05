@@ -527,17 +527,17 @@
 
             <section id="body-scrolly" class="side-by-side">
 
-                <!-- STICKY MEDIA CONTAINER (RIGHT SIDE / FULL-WIDTH) -->
+                <!-- Full-width image container on right. -->
                 <div class="sticky-thing">
                     <div id="zoomBox">
-                        <img id="scrollyPhoto" class="photoDiv" src="./assets/mattancherry.jpg" alt="Mural Heritage Visual">
+                        <img id="scrollyPhoto" class="photoDiv" src="./assets/central.jpg" alt="Mural Heritage Visual">
                     </div>
                 </div>
-
-                <!-- SCROLLING TEXT CARDS (LEFT OVERLAY) -->
+                <!-- The originial version of this template was made by Johnathan Soma, adapted by Aaron Reiss. This template is futher adapted here. -->
+                 <!-- Template for Scrollytelling With Exported Images-->
                 <div class="scrolly-overlay">
 
-                    <!-- STEP 1: Mattancherry Palace + Ticket Zoom -->
+                    <!-- STEP 1: Location of Mattancherry palace + ticket photo -->
                     <div class="body-step" id="body-step1">
                         <h3> Mattancherry Palace Murals</h3>
                         <p>
@@ -550,7 +550,7 @@
                         </div>
                     </div>
 
-                    <!-- STEP 2: Ramayana Mural (Static Unzoomed Overview) -->
+                    <!-- STEP 2: Mural at Ramayana hall, Rainer Halama's image -->
                     <div class="body-step" id="body-step2">
                         <h3><i>Ramayana </i> hall</h3>
                         <p>
@@ -562,7 +562,7 @@
                         </p>
                     </div>
 
-                    <!-- STEP 2B: Ramayana Mural (Zoomed Detail: Birth of Rama) -->
+                    <!-- STEP 2B: Rama's birth zoomed detail -->
                     <div class="body-step" id="body-step2b">
                         <h3> Rama avatar</h3>
                         <p>
@@ -573,7 +573,7 @@
                         </p>
                     </div>
 
-                    <!-- STEP 3: State Protected Murals Map -->
+                    <!-- STEP 3: murals protected by state -->
                     <div class="body-step" id="body-step3">
                         <h3>Murals protected by the Department of Archaeology, Government of Kerala
                         </h3>
@@ -582,14 +582,14 @@
                         </p>
                     </div>
 
-                    <!-- STEP 3b: State Protected Murals Map -->
+                    <!-- STEP 3b: murals protected by state-ganesha -->
                     <div class="body-step" id="body-step3b">
                         <p>
                         like this <i>Ganesha</i> at <span style="color: #b2955b; font-weight: bold;">Siva Narayana Temple, Thirunayathode.</span> 
                         </p>
                     </div>
 
-                    <!-- STEP 4: Unlisted Site (Kadavil Thrikkovil) -->
+                    <!-- step4: Murals at Kadavil -->
                     <div class="body-step" id="body-step4">
                         <h3>Murals not listed as heritage</h3>
                         <p>
@@ -597,14 +597,14 @@
                         </p>
                     </div>
 
-                    <!-- STEP 5: Proximity Analysis Distance Map -->
+                    <!-- step5: distance map -->
                     <div class="body-step" id="body-step5">
                         <h3>Proximity to protected murals</h3>
                         <p>
                             It is surprising that a temple like <span style="color:#a6514d; font-weight: bold;"> Kadavil Thrikkovil</span>, with unlisted murals, is in close proximity to centre- and state-protected murals. A distance of 12 km separates <span style="color: #a6514d; font-weight: bold;">Kadavil Thrikkovil</span> from <span style="color: #98552b; font-weight: bold;">Mattancherry Palace</span>, protected by the ASI, and the state-protected <span style="color: #b2955b; font-weight: bold;"> Pazhoor Perumthrikovil Mahadeva temple.</span>
                         </p>
                         </div>
-                        <!-- STEP 6: inscription details -->
+                        <!-- Step6: inscription -->
                     <div class="body-step" id="body-step6">
                         <h3>Etched in our minds...</h3>
                         <p>    
@@ -616,7 +616,7 @@
             </section>
         </article>
 
-        <!-- CHAPTER 2 BANNER & HEADER IMAGE -->
+        <!-- kadavil section: image of elephant -->
         <div id="chapter2-wrapper">
             <div class="chapter-image-container">
                 <img src="./assets/chapter_title_img.jpg" alt="Chapter Title Visual" class="chapter-image">
@@ -634,7 +634,7 @@
             <p>
                 Here, Lord Krishna plays the flute, Matangi plucks the Veena, and Siva revels in his <i>Tāṇḍava</i> dance.
             </p>
-             <!-- THREE IMAGES SIDE-BY-SIDE -->
+             <!-- kadavil image gallery -->
             <div class="image-grid-3">
                 <figure>
                     <img src="./assets/krishna.jpg" alt="Mural Detail 1">
@@ -670,7 +670,7 @@
                Because many such murals are part of living temples that host daily rituals, formally listing them as heritage is complex. Kadavil Thrikkovil has a rare image of <i>Kalki</i>, the final incarnation of Vishnu. <i>Kalki's</i> arrival marks the end of the unrighteous Kali Yuga and heralds the onset of the virtuous Satya Yuga. We can only hope that these murals will eternally enliven and renew the sanctum sanctorum of Kadavil Thrikkovil.  
             </p>
 
-            <!-- CENTERED KALKI MURAL IMAGE -->
+            <!-- Final image of Kalki Centered -->
         <figure class="centered-image-box">
             <img src="./assets/kalki.jpg" alt="Mural depiction of Kalki at Kadavil Thrikkovil">
             <figcaption>A rare portrayal of an incarnate <i>Kalki</i> – sword drawn.</figcaption>
@@ -949,7 +949,11 @@
         }
     </script>
 
-    <!-- Isolated Body Scrolley Execution Script -->
+   /* Scrollytelling code goes under here */
+
+  // Code for the Photo Div #1 (aka #scrollyPhoto1)
+    
+    // Entering Step One
     <script>
         const bodyScroller = scrollama();
 

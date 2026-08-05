@@ -837,6 +837,10 @@
 
         // Recalculate layout whenever window resizes
         window.addEventListener('resize', function() {
+             requestAnimationFrame(function() {
+        map.resize();
+        });
+        });
             map.resize();
         });
         if (config.inset) {

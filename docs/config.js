@@ -8,7 +8,7 @@ var config = {
     //Read more about available projections here
     //https://docs.mapbox.com/mapbox-gl-js/example/projections/
     title: 'The Murals of Kochi',
-    subtitle: 'While some murals in Kochi are protected as heritage sites, others are not.',
+    subtitle: 'Some murals in Kochi are heritage sites; others are not.',
     byline: 'Vimal Krishnan R',
     inset: true,
     insetOptions: {

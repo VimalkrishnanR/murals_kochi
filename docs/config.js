@@ -1,5 +1,5 @@
 var config = {
-        style: 'mapbox://styles/vimalkrishnan/cms7icmfp005t01sdc4a85u13',
+        // style: 'mapbox://styles/vimalkrishnan/cms7icmfp005t01sdc4a85u13',
     // leave commented to use Mapbox Standard Style
     accessToken: 'pk.eyJ1IjoidmltYWxrcmlzaG5hbiIsImEiOiJjbXM5Mno1ajgwOHA2MnpzY2Jobmk1cDRtIn0.3C5BWAJakNTmKtmiCB8TEQ',
     //  showMarkers: true,

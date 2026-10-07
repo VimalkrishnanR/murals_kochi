@@ -54,7 +54,7 @@ var config = {
             hidden: false,
             title: 'Temple Density in Ernakulam',
             // image: './assets/san-fran.jpeg',
-            description: 'Similar to other districts in Kerala, Ernakulam is famous for its wide range of temples. Within a 10 km radius of only four spots—Aluva, Kochi, Paravur, and Muvattupuzha—there are just over 200 temples. This illustrates the high density of temples in Ernakulam.'
+            description: 'Similar to other districts in Kerala, Ernakulam is famous for its wide range of temples. Within a 10 km radius of only four spots—Aluva, Kochi, Paravur, and Muvattupuzha—there are just over 200 temples. This illustrates the high density of temples in Ernakulam.',
 
             location: {
                 center: [76.259349, 9.9582986],
